@@ -3,13 +3,13 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyCdHT-AYHXjF7wOrfAchX4PIm3cSj5tn14",
-  authDomain: "crwn-db.firebaseapp.com",
-  databaseURL: "https://crwn-db.firebaseio.com",
-  projectId: "crwn-db",
-  storageBucket: "crwn-db.appspot.com",
-  messagingSenderId: "850995411664",
-  appId: "1:850995411664:web:7ddc01d597846f65",
+  apiKey: "AIzaSyBv8V3Zq8FHEG2_FAsli0CenmoFiXJld3Q",
+  authDomain: "crwn-db-9c21f.firebaseapp.com",
+  databaseURL: "https://crwn-db-9c21f.firebaseio.com",
+  projectId: "crwn-db-9c21f",
+  storageBucket: "crwn-db-9c21f.appspot.com",
+  messagingSenderId: "33381838092",
+  appId: "1:33381838092:web:bad9380a7680b1d9d3ad29",
 };
 
 firebase.initializeApp(config);
@@ -39,10 +39,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   return userRef;
 };
 
-export const addCollectionAndDocuments = async (
-  collectionKey,
-  objectsToAdd
-) => {
+export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
   const collectionRef = firestore.collection(collectionKey);
 
   const batch = firestore.batch();
