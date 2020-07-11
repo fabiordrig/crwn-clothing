@@ -7,13 +7,14 @@ const StripeCheckoutButton = ({ price }) => {
     "pk_test_51H1MKYBbc0cupNSsk8TIVGwRz9cEJlRLUrXZh92ubsmoj4xvuRUyLjTXlUWimUaeYUNeqermE28PKsrNOi7jcrf700hQpLe5zo";
 
   const onToken = (token) => {
-    alert("Payment Successful");
+    console.log(token);
+    alert("Payment Succesful!");
   };
 
   return (
     <StripeCheckout
       label="Pay Now"
-      name="CRWN Clothing LTDA."
+      name="CRWN Clothing Ltd."
       billingAddress
       shippingAddress
       image="https://svgshare.com/i/CUz.svg"
